@@ -101,6 +101,7 @@ io.on("connection", function(socket){
     } else {
       data.true = '0';
     }
+    
 
     socket.broadcast.emit("forward-msg-to-client", data);
 
