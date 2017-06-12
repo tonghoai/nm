@@ -1,0 +1,65 @@
+<!-- views/profile.ejs -->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Messenger - Profile</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body        { padding-top:80px; word-wrap:break-word; }
+    </style>
+</head>
+<body style="margin-bottom: 67px;">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Messenger <span style="color: #0084FF"><%= nickname %></span> <i class="fa fa-terminal" aria-hidden="true" id="ter"></i></a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/profile"><i class="fa fa-user-o" aria-hidden="true"></i> Profile</a></li>
+          <li><a href="/#"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a></li>
+          <li><a href="/logout"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+          <li><p style="padding: 10px 15px; margin-bottom: 0px;"><img src="/img/avatars/<%= user.local.email %>.jpg" width="30px" height="30px" class="img-circle"></p></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="container">
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="well" style="">
+      <div class="row">
+        <div class="col-xs-4">
+          <img src="/img/avatars/<%= user.local.email %>.jpg" class="img-responsive img-circle">
+          <p style="text-align: center; padding-top: 10px; font-size: 18px; color: #0084FF;"><%= user.local.nickname %></p>
+        </div>
+        <div class="col-xs-8">
+          <div style="font-size: 26px; padding-bottom: 10px;"><i class="fa fa-id-card" aria-hidden="true"></i> <%= user._id %></div>
+          <ul style="list-style: none; padding: 0px;">
+              <li style="padding: 2px 0px;"><strong><i class="fa fa-user-circle" aria-hidden="true" style="padding-right: 5px;"></i> User</strong>: <%= user.local.username %><br></li>
+              <li style="padding: 2px 0px;"><strong><i class="fa fa-reply" aria-hidden="true" style="padding-right: 5px;"></i> Email</strong>: <%= user.local.email %><br></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: right;"><a href="/chat" class="btn btn-primary">Go to Chat</a></div>
+  </div>
+</div>
+</div>
+</body>
+</html>

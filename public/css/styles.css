@@ -1,0 +1,118 @@
+#content-first {
+  padding-top: 61px;
+}
+
+#content {
+
+}
+
+#content-fix {
+  position: fixed;
+  bottom: 69px;
+}
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 1px;
+}
+
+.fixed input {
+  width: 100%;
+  padding: 10px 105px 10px 40px;
+  border: 1px solid #F1F0F0;
+  outline: none;
+}
+
+.content-left-down {
+  text-align: right;
+  color: #999999;
+  padding: 7px 15px 0px 7px;
+  float: left;
+  font-size: 12px;
+}
+
+.content-right {
+  text-align: right;
+  background-color: #0084FF;
+  color: #fff;
+  padding: 5px 15px;
+  margin-bottom: 2px;
+  border-radius: 45px;
+  float: right;
+}
+
+.sticker-content-right {
+  text-align: right;
+  padding: 5px 15px;
+  margin-bottom: 2px;
+  float: right;
+}
+
+.content-left {
+  text-align: left;
+  /*background-color: #F1F0F0;*/
+  padding: 0px 15px;
+  margin-bottom: 2px;
+  /*border-radius: 45px;*/
+  float: left;
+}
+
+.content-left > .msg {
+  background-color: #F1F0F0;
+  padding: 5px 15px;
+  border-radius: 45px;
+  float: left;
+  margin-left: -20px;
+}
+
+.content-left > .sticker-msg {
+  padding: 5px 15px;
+  float: left;
+  margin-left: -20px;
+}
+
+.clr {
+  clear: both;
+  width: 70%;
+}
+
+.msg-left {
+  background-color: #F1F0F0;
+  padding: 5px 15px;
+  margin-bottom: 2px;
+  border-radius: 1.3em;
+  text-align: left;
+  float: left;
+  margin-left: 20px;
+}
+
+.msg-right {
+  color: #fff;
+  background-color: #0084FF;
+  padding: 5px 15px;
+  margin-bottom: 2px;
+  border-radius: 1.3em;
+  text-align: left;
+  float: right;
+}
+
+.left {
+  text-align: left;
+  float: left;
+}
+
+.right {
+  text-align: right;
+  float: right;
+}
+
+.sticker, .pic {
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.avatar {
+  padding: 33px 0px;
+}
